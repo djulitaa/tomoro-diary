@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Catatan pelanggan setia Tomoro Coffee dan top 3 minuman favoritnya.">
+  <title>Home | Tomoro Diary</title>
+  <link rel="icon" type="image/svg+xml" href="img/ktomo.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header-isi">
+    <img src="img/kucing.png" alt="Logo Tomoro Diary" width="72" height="72">
+    <div>
+      <h1>Tomoro Diary</h1>
+      <p>Catatan harian seorang pelanggan setia Tomoro Coffee</p>
+      <span class="slogan">See You Tomoro</span>
+    </div>
+  </div>
+</header>
+
+<!-- TULISAN BERJALAN -->
+<div class="ticker"><span>&#9749; Selamat datang di Tomoro Diary &mdash; See You Tomoro! &#9749; Intip top 3 minuman favoritku di menu Top 3 &#9749; Yuk gabung lewat menu Registration</span></div>
+
+<!-- NAVIGASI MENU -->
+<nav class="nav" aria-label="Menu utama"><ul>
+<li><a href="index.html" class="aktif">Home</a></li>
+<li><a href="top3.html">Top 3</a></li>
+<li><a href="about.html">About &#9662;</a><ul class="dropdown">
+<li><a href="about.html">Profil</a></li>
+<li><a href="sejarah.html">Sejarah</a></li>
+<li><a href="visi-misi.html">Visi &amp; Misi</a></li>
+<li><a href="tujuan.html">Tujuan</a></li>
+<li><a href="struktur.html">Struktur Organisasi</a></li>
+</ul></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="registration.html">Registration</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul></nav>
+
+<!-- ISI HALAMAN -->
+<div class="wadah">
+<aside class="sidebar">
+  <div class="widget jam">
+    <h3>Waktu Sekarang</h3>
+    <div id="jam">00:00:00</div>
+    <div id="salam"></div>
+  </div>
+
+  <div class="widget profil">
+    <h3>Tentang Penulis</h3>
+    <img src="img/avatar.webp" alt="Foto penulis" width="96" height="96">
+    <div class="nama">Munazi Julita</div>
+    <div class="jurusan">Library Science</div>
+    <p style="font-size:.9rem;margin-top:8px;">Pelanggan setia Tomoro Coffee yang suka mencatat minuman favoritnya.</p>
+  </div>
+
+  <div class="widget">
+    <h3>Top 3 Minumanku</h3>
+    <ol class="peringkat">
+      <li><span>1</span> Matcha Frappe</li>
+      <li><span>2</span> Matcha Oat</li>
+      <li><span>3</span> Triple Pistachio Latte</li>
+    </ol>
+    <a href="top3.html">Lihat alasannya &raquo;</a>
+  </div>
+
+  <div class="widget">
+    <h3>Artikel Terbaru</h3>
+    <ul>
+      <li><a href="artikel-1.html">Matcha Frappe</a></li>
+      <li><a href="artikel-2.html">Matcha Oat</a></li>
+      <li><a href="artikel-3.html">Perjalanan Tomoro Coffee</a></li>
+    </ul>
+  </div>
+</aside>
+
+<main class="konten">
+<div class="sambutan">
+  <h2>Halo, selamat datang!</h2>
+  <p>Aku Munazi Julita, mahasiswa Library Science. Aku suka sekali nongkrong di Tomoro Coffee, dan di sini aku mencatat pengalamanku, termasuk tiga minuman yang paling sering kupesan.</p>
+</div>
+
+<h2>Top 3 Minuman Favoritku</h2>
+<div class="podium">
+    <div class="peringkat-kartu">
+      <div class="lencana">1</div>
+      <img src="https://i.ibb.co.com/Q3Mj25ND/01.jpg" alt="Matcha Frappe" width="800" height="600" loading="lazy">
+      <h3>Matcha Frappe</h3>
+      <p>Dingin, creamy, dan selalu jadi pesanan pertamaku setiap ke Tomoro.</p>
+    </div>
+    <div class="peringkat-kartu">
+      <div class="lencana">2</div>
+      <img src="https://i.ibb.co.com/NnQgjXGh/02.jpg" alt="Matcha Oat" width="800" height="600" loading="lazy">
+      <h3>Matcha Oat</h3>
+      <p>Rasanya lembut dan ringan, cocok kalau ingin yang tidak terlalu berat.</p>
+    </div>
+    <div class="peringkat-kartu">
+      <div class="lencana">3</div>
+      <img src="https://i.ibb.co.com/rffxF987/03.jpg" alt="Triple Pistachio Latte" width="800" height="600" loading="lazy">
+      <h3>Triple Pistachio Latte</h3>
+      <p>Ceritakan alasanmu menyukai minuman ini.</p>
+    </div>
+</div>
+<p><a href="top3.html">Baca alasan lengkapnya &raquo;</a></p>
+
+<div class="slider">
+  <img id="foto-slider" src="https://i.ibb.co.com/Q3Mj25ND/01.jpg" alt="Foto minuman Tomoro" width="800" height="600">
+  <div class="keterangan" id="teks-slider">#1 Matcha Frappe</div>
+  <button class="prev" onclick="fotoSebelumnya()" aria-label="Foto sebelumnya">&#10094;</button>
+  <button class="next" onclick="fotoBerikutnya()" aria-label="Foto berikutnya">&#10095;</button>
+</div>
+
+<h2>Artikel Terbaru</h2>
+<div class="daftar-artikel">
+    <article class="kartu">
+      <img src="https://i.ibb.co.com/Q3Mj25ND/01.jpg" alt="Matcha Frappe: Alasan Dia Jadi Juara Pertamaku" width="800" height="600">
+      <div class="isi">
+        <h3><a href="artikel-1.html">Matcha Frappe: Alasan Dia Jadi Juara Pertamaku</a></h3>
+        <p class="tanggal">8 November 2026</p>
+        <p>Dari semua menu Tomoro yang pernah kucoba, satu ini selalu jadi pesanan pertamaku.</p>
+        <a class="baca-lanjut" href="artikel-1.html">Read More &raquo;</a>
+      </div>
+    </article>
+    <article class="kartu">
+      <img src="https://i.ibb.co.com/NnQgjXGh/02.jpg" alt="Matcha Oat: Pilihan Lembut Saat Ingin Sesuatu yang Beda" width="800" height="600" loading="lazy">
+      <div class="isi">
+        <h3><a href="artikel-2.html">Matcha Oat: Pilihan Lembut Saat Ingin Sesuatu yang Beda</a></h3>
+        <p class="tanggal">7 November 2026</p>
+        <p>Juara keduaku. Rasanya lembut dan cocok untuk nongkrong santai.</p>
+        <a class="baca-lanjut" href="artikel-2.html">Read More &raquo;</a>
+      </div>
+    </article>
+    <article class="kartu">
+      <img src="https://i.ibb.co.com/5hkC8ZPn/Tomoro-Coffee-1200x721-1.jpg" alt="Tomoro Coffee: Dari Satu Gerai di Pluit hingga Ratusan Gerai" width="800" height="600" loading="lazy">
+      <div class="isi">
+        <h3><a href="artikel-3.html">Tomoro Coffee: Dari Satu Gerai di Pluit hingga Ratusan Gerai</a></h3>
+        <p class="tanggal">6 November 2026</p>
+        <p>Mengenal perjalanan brand kopi yang namanya berarti &ldquo;masa depan&rdquo;.</p>
+        <a class="baca-lanjut" href="artikel-3.html">Read More &raquo;</a>
+      </div>
+    </article>
+</div>
+</main>
+</div>
+
+<footer class="footer">
+  <p>&copy; 2026 Tomoro Diary. Semua hak cipta tulisan dan foto milik penulis.</p>
+  <p>Didesain oleh MJ (Library Science) &middot; Website resmi Tomoro Coffee:
+     <a href="https://www.tomoro-coffee.com" target="_blank" rel="noopener">www.tomoro-coffee.com</a></p>
+  <p><small>Website ini dibuat untuk tugas UTS dan bukan website resmi Tomoro Coffee.</small></p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

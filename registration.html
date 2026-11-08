@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formulir pendaftaran komunitas Tomoro Diary.">
+  <title>Registration | Tomoro Diary</title>
+  <link rel="icon" type="image/svg+xml" href="img/ktomo.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header-isi">
+    <img src="img/kucing.png" alt="Logo Tomoro Diary" width="72" height="72">
+    <div>
+      <h1>Tomoro Diary</h1>
+      <p>Catatan harian seorang pelanggan setia Tomoro Coffee</p>
+      <span class="slogan">See You Tomoro</span>
+    </div>
+  </div>
+</header>
+
+<!-- TULISAN BERJALAN -->
+<div class="ticker"><span>&#9749; Selamat datang di Tomoro Diary &mdash; See You Tomoro! &#9749; Intip top 3 minuman favoritku di menu Top 3 &#9749; Yuk gabung lewat menu Registration</span></div>
+
+<!-- NAVIGASI MENU -->
+<nav class="nav" aria-label="Menu utama"><ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="top3.html">Top 3</a></li>
+<li><a href="about.html">About &#9662;</a><ul class="dropdown">
+<li><a href="about.html">Profil</a></li>
+<li><a href="sejarah.html">Sejarah</a></li>
+<li><a href="visi-misi.html">Visi &amp; Misi</a></li>
+<li><a href="tujuan.html">Tujuan</a></li>
+<li><a href="struktur.html">Struktur Organisasi</a></li>
+</ul></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="registration.html" class="aktif">Registration</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul></nav>
+
+<!-- ISI HALAMAN -->
+<div class="wadah">
+<aside class="sidebar">
+  <div class="widget jam">
+    <h3>Waktu Sekarang</h3>
+    <div id="jam">00:00:00</div>
+    <div id="salam"></div>
+  </div>
+
+  <div class="widget profil">
+    <h3>Tentang Penulis</h3>
+    <img src="img/avatar.webp" alt="Foto penulis" width="96" height="96">
+    <div class="nama">Munazi Julita</div>
+    <div class="jurusan">Library Science</div>
+    <p style="font-size:.9rem;margin-top:8px;">Pelanggan setia Tomoro Coffee yang suka mencatat minuman favoritnya.</p>
+  </div>
+
+  <div class="widget">
+    <h3>Top 3 Minumanku</h3>
+    <ol class="peringkat">
+      <li><span>1</span> Matcha Frappe</li>
+      <li><span>2</span> Matcha Oat</li>
+      <li><span>3</span> Triple Pistachio Latte</li>
+    </ol>
+    <a href="top3.html">Lihat alasannya &raquo;</a>
+  </div>
+
+  <div class="widget">
+    <h3>Artikel Terbaru</h3>
+    <ul>
+      <li><a href="artikel-1.html">Matcha Frappe</a></li>
+      <li><a href="artikel-2.html">Matcha Oat</a></li>
+      <li><a href="artikel-3.html">Perjalanan Tomoro Coffee</a></li>
+    </ul>
+  </div>
+</aside>
+
+<main class="konten">
+<h2>Registration</h2>
+<p>Gabung komunitas Tomoro Diary untuk mendapat info ulasan terbaru dan ikut berbagi minuman Tomoro favoritmu.</p>
+
+<form class="form" onsubmit="return validasiRegistrasi()">
+  <label for="nama">Nama Lengkap</label>
+  <input type="text" id="nama" name="nama" placeholder="Nama kamu">
+
+  <label for="email">Email</label>
+  <input type="text" id="email" name="email" placeholder="nama@email.com">
+
+  <label for="umur">Umur</label>
+  <input type="number" id="umur" name="umur" placeholder="Contoh: 20">
+
+  <label for="kota">Kota</label>
+  <input type="text" id="kota" name="kota" placeholder="Kota tempat tinggal">
+
+  <label for="favorit">Minuman Tomoro Favoritmu</label>
+  <select id="favorit" name="favorit">
+    <option>Matcha Frappe</option>
+    <option>Matcha Oat</option>
+    <option>Aren Latte</option>
+    <option>Cappuccino</option>
+    <option>Lainnya</option>
+  </select>
+
+  <label>Seberapa sering ke Tomoro?</label>
+  <div class="pilihan">
+    <label><input type="radio" name="sering" value="jarang" checked> Jarang</label>
+    <label><input type="radio" name="sering" value="kadang"> Kadang</label>
+    <label><input type="radio" name="sering" value="sering"> Sering</label>
+  </div>
+
+  <label for="alasan">Kenapa ingin bergabung?</label>
+  <textarea id="alasan" name="alasan" rows="4" placeholder="Ceritakan singkat"></textarea>
+
+  <button type="submit">Daftar</button>
+  <div id="pesan-status"></div>
+</form>
+</main>
+</div>
+
+<footer class="footer">
+  <p>&copy; 2026 Tomoro Diary. Semua hak cipta tulisan dan foto milik penulis.</p>
+  <p>Didesain oleh MJ (Library Science) &middot; Website resmi Tomoro Coffee:
+     <a href="https://www.tomoro-coffee.com" target="_blank" rel="noopener">www.tomoro-coffee.com</a></p>
+  <p><small>Website ini dibuat untuk tugas UTS dan bukan website resmi Tomoro Coffee.</small></p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
